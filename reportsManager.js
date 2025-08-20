@@ -57,20 +57,7 @@ async function fetchAllReportData() {
 
 // --- RAPOR OLUŞTURMA FONKSİYONLARI (İÇLERİ ŞİMDİLİK BOŞ) ---
 
-async function generateCiroKarReport() {
-    activeReportGenerator = generateCiroKarReport;
-    renderReportTable('Dönemsel Ciro ve Kâr', [], [], '<p>Bu raporun içeriği yakında eklenecek.</p>');
-}
 
-async function generateKanalSatisRaporu() {
-    activeReportGenerator = generateKanalSatisRaporu;
-    renderReportTable('Satış Kanalı Performansı', [], [], '<p>Bu raporun içeriği yakında eklenecek.</p>');
-}
-
-async function generateSaatlikSatis() {
-    activeReportGenerator = generateSaatlikSatis;
-    renderReportTable('Saatlik Satış Yoğunluğu', [], [], '<p>Bu raporun içeriği yakında eklenecek.</p>');
-}
 
 // ... Diğer tüm rapor fonksiyonları için benzer boş şablonlar ...
 async function generateGunSonu() {
@@ -560,9 +547,9 @@ function handleReportCardClick(e) {
         'stokDegeri': generateStokDegeriRaporu,
         'fireZayiat': generateFireReport,
         'enCokSatan': generateEnCokSatanReport,
-        'enCokKar': generateEnCokKarReport,
+       // 'enCokKar': generateEnCokKarReport,
         'enAzSatan': generateEnAzSatanReport,
-        'karMarji': generateKarMarjiRaporu,
+        //'karMarji': generateKarMarjiRaporu,
         'kategoriPerformans': generateKategoriPerformansRaporu,
         'iadeRaporu': generateIadeRaporu,
         'saatlikSatis': generateSaatlikSatis,
